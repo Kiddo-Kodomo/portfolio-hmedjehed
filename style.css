@@ -1,0 +1,346 @@
+span{
+    font-family: 'Prompt', sans-serif;
+    font-weight: medium;
+    color: white;
+}
+
+a {
+    font-family: 'Prompt', sans-serif !important;
+    font-weight: medium !important;
+    font-size: x-large !important;
+    color: white !important;
+}
+
+h1 , h2 , h3 {
+    font-family:'Readex Pro', sans-serif;
+    font-weight: bolder; 
+}
+
+h4 {
+    font-family: 'Prompt', sans-serif;
+    font-weight: medium;
+}
+
+p.text-justify{
+    text-align: justify;
+}
+
+@font-face {
+    font-family: "AeonikBold";
+    src: url("/font/AeonikTRIAL-Bold.woff") format("woff2"), format("woff");
+
+    font-family: "AeonikRegular";
+    src: url("/font/AeonikTRIAL-Regular.woff") format("woff2"), format("woff");
+
+    font-family: "AeonikLight";
+    src: url("/font/AeonikTRIAL-Light.woff") format("woff2"), format("woff");
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
+
+.video-wrapper {
+    /* Telling our absolute positioned video to 
+    be relative to this element */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* Will not allow the video to overflow the 
+    container */
+    overflow: hidden;
+    /* Centering the container's content vertically 
+    and horizontally */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.video-wrapper video {
+    /** Simulationg background-size: cover */
+    object-fit:cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.video-wrapper h1 {
+    font-family: "Readex Pro",sans-serif;
+    color: white !important;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 4px;
+    z-index:100;
+    position:absolute;
+    top:650px;
+    left:100px
+}
+
+.video-wrapper h2 {
+    font-family: "Sintony",sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 6px;
+    z-index:100;
+    position:absolute;
+    top:175px;
+}
+
+.video-wrapper p {
+    font-family: "Readex Pro",sans-serif;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    top: 300px;
+}
+
+.video-wrapper .videolinks{
+    position:absolute;
+    top:20px;
+    left:20px;
+    z-index:101;
+}
+
+
+.col-4 h2{
+    color:  rgb(0, 0, 0);
+}
+
+.container-fluid h4{
+    color: rgb(255, 74, 33);
+    font-size: 100px;
+}
+
+
+.container-fluid{
+    padding: 0px !important; 
+    margin: 0px !important;
+}
+
+.desc__project{
+    margin: 5px;
+    
+}
+
+.desc__project h2{
+    color: rgb(0, 0, 0);
+    font-size: 19px;
+    
+}
+
+.desc__project p{
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+
+.article__project{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.article__project img{
+    width: 100%;
+}
+
+
+.section__prod .col-4 h2{
+    font-size: 20px;
+}
+
+.article__project .col{
+    padding-top: 50px ;
+}
+
+.padding{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.section__prod h2{
+    font-size: 20px !important;
+}
+
+.article__project h2{
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+.nav-link{
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: bolder;
+}
+
+.section__prod2 .project__img{
+    padding: 0px;
+}
+
+
+
+.project__img2 img{
+    width: 100%;
+    cursor: pointer;
+}
+
+.section__prod2 .col-3 h2{
+    font-size: 20px;
+}
+
+.section__prod2 .col-2 h2{
+    font-size: 20px;
+}
+
+.section__prod .project__img{
+    padding: 0px;
+}
+
+.section__prod{
+    padding-top: 30vh;
+}
+
+.section__prod2{
+    padding-top: 30vh;
+}
+
+.padding__bot-high{
+    padding-bottom: 30vh !important;
+}
+
+
+
+.project__img img{
+    width: 100%;
+    cursor: pointer;
+}
+
+figure{
+    
+    transition: all .8s ease-in-out;
+    /* padding: 0 50px !important; */
+}
+figure:hover{
+    width: 80% !important;
+}
+
+.padding__vh{
+    padding: 15vh;
+}
+
+.padding__get-intouch{
+    padding-top: 10px !important;
+}
+
+.marquee {
+    height: 400px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.marquee div {
+    display: block;
+    width: 200%;
+    height: 100%;
+    
+    position: absolute;
+    overflow: hidden;
+    
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: marquee;
+}
+
+.marquee span {
+    float: left;
+    width: 100%;
+}
+
+@keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+}
+
+.text__getin span{
+    font-size: 300px !important;
+    text-transform: uppercase !important;
+    color: rgb(255, 255, 255);
+}
+
+.row{
+    padding: 0px !important;
+}
+
+.padding__get-intouch h2{
+    font-family: 'Prompt', sans-serif;
+    font-size: 20px;
+}
+
+
+.big__text {
+    color: white !important ;
+    font-size: 140px !important;
+    font-family: 'Prompt', sans-serif;
+}
+
+.mid__text{
+    color: white !important;
+    font-size: 30px !important;
+    font-family: 'Prompt', sans-serif;
+}
+
+.line__height{
+    line-height: 0.8 !important;
+}
+
+.line__height strong{
+    color: rgb(255, 74, 33);
+}
+
+.lil_text{
+    font-size: 20px !important;
+    font-family: 'Prompt', sans-serif !important;
+    font-weight: medium !important;
+}
+
+.padding__vh-high{
+    padding-top: 30vh !important;
+}
+
+.nav__on{
+    position: absolute;
+    top: 0;
+}
+
+.padding__vh-mid{
+    padding-top: 13vh !important;
+}
+
+.black__border{
+    border-color: black !important;
+}
+
+.blend__dif{
+    mix-blend-mode: difference;
+}
+
+.black__text{
+    color: black !important;
+    text-decoration: none;
+}
+
+.anti__nav{
+    font-family: 'Prompt', sans-serif !important;
+    font-weight:200 !important;
+    font-size: x-large !important;
+    color: white !important;
+}
+
